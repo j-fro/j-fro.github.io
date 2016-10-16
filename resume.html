@@ -3,29 +3,50 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="static\styles.css">
-        <script src="static\jquery-ui-1.12.0\external\jquery\jquery.js"></script>
-        <script src="static\jquery-ui-1.12.0\jquery-ui.js"></script>
-        <script>
-        $( function() {
-            $( "#accordion" ).accordion({
-                collapsible: true,
-                heightstyle: "content"
-            });
-        } );    
-        </script>
     </head>
     <body>
-        <header>
-            <img src="images/portrait.jpg" />
-            <span><h1>Jacob Froman</h1></span>
-        </header>
-        <main id="accordion">
-            <h3>Experience</h3>
-            <section>
-                <div class="dark_div">
+        <aside>
+            <header>
+                <img src="static/images/portrait.jpg" />
+                <h1>Jacob Froman</h1>
+                <h2>Aspiring developer</h2>
+                <h3>San Francisco, CA | Minneapolis, MN</h3>
+            </header>
+            <nav>                
+                <a href="#experience">
+                    <section>
+                        <p>Experience</p>
+                    </section>
+                </a>                                
+                <a href="#projects">
+                    <section>
+                        <p>Projects</p>
+                    </section>
+                </a>                
+                <a href="#education">
+                    <section>                  
+                        <p>Education</p>
+                    </section>
+                </a>
+                <a href="#skills">
+                    <section>
+                        <p>Skills</p>
+                    </section>
+                </a>
+                <a href="#contact">
+                    <section>
+                        <p>Contact</p>
+                    </section>
+                </a>                
+            </nav>
+        </aside>
+        <main>
+            <section id="experience">
+                <h3>Experience</h3>
+                <header>
                     <h4>Merchant</h4>
-                </div>
-                <div class="light_div">
+                </header>
+                <section>
                     <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
                     <p>March 2014 - Current</p>
                     <ul>
@@ -34,11 +55,11 @@
                         <li><p>Managed product needs for all company events, over 200 events per year</p></li>
                         <li><p>Overhauled EDI (data interchange) system to reduce costs and dramatically reduce daily time investment</p></li>
                     </ul>
-                </div>     
-                <div class="dark_div">
+                </section>     
+                <header>
                     <h4>Merchandising Assistant</h4>
-                </div>
-                <div class="light_div">
+                </header>
+                <section>
                     <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
                     <p>January 2012 - March 2014</p>
                     <ul>
@@ -46,11 +67,11 @@
                         <li><p>Customer service for national accounts, including making product available for requests to drive sales</p></li>
                         <li><p>Analyze corporate sales data to help plan orders and product development</p></li>
                     </ul>
-                </div>
-                <div class="dark_div">
+                </section>
+                <header>
                     <h4>Office Assistant</h4>
-                </div>
-                <div class="light_div">
+                </header>
+                <section>
                     <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
                     <p>June 2011 - January 2012</p>
                     <ul>
@@ -58,55 +79,54 @@
                         <li><p>Oversaw repair process for customer owned repairs</p></li>
                         <li><p>Contributed to sales presentations as well as presentations for corporate meetings</p></li>
                     </ul>
-                </div>
-                <div class="dark_div">
+                </section>
+                <header>
                     <h4>Office Assistant (Part Time)</h4>
-                </div>
-                <div class="light_div">
-                    <div>
+                </header>
+                <section>
                     <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
                     <p>June 2008 - June 2011</p>
                     <ul>
                         <li><p>Oversaw incoming and outgoing inventory movement; invoice packages out, returning incoming merchandise to stock condition</p></li>
                         <li><p>Contributed to sales presentations as well as presentations for corporate meetings</p></li>
                     </ul>
-                    </div>
-                </div>
-            </section>
-            <h3>Projects</h3>
-            <section>
-                <div class="dark_div">
+                </section>
+            </section>            
+            <section id="projects">
+                <h3>Projects</h3>
+                <section>
                     <h4>Custom EDI Integrator</h4>
-                </div>
-                <div class="light_div">
+                </section>
+                <section>
                     <p>Client GUI application built with Python and PyQt. Queried company databases to aggregate invoice data to be transmitted to corporate partners for outgoing shipments.</p>
                     <p>Provided runtime checks of invoice data against client orders to avoid costly data mistakes</p>
-                </div>
-                <div class="dark_div">
+                </section>
+                <section>
                     <h4>Rowing Club Scheduler</h4>
-                </div>
-                <div class="light_div">
-                    <p>A simple web app built with Python and Django to allow a rowing club to manage members schedules and assign members to boats based on their positions and availability</p>
-                </div>
-            </section>
-            <h3>Education</h3>
-            <section>
-                <div class="dark_div">
+                </section>
+                <section>
+                    <p>A web app built with Python and Django to allow a rowing club to manage members schedules and assign members to boats based on their positions and availability</p>
+                </section>
+            </section>            
+            <section id="education">
+                <h3>Education</h3>
+                <section>
                     <h4>University of Redlands</h4>
-                </div>
-                <div class="light_div">
+                </section>
+                <section>
                     <p>Redlands, CA, December 2011</p>
                     <ul>
-                        <li>Member of Phi Beta Kappa</li>
+                        <li><p>Bachelor of Arts: History</p></li>
+                        <li><p>Member of Phi Beta Kappa</p></li>
                     </ul>
-                </div>
-            </section>
-            <h3>Skills</h3>
-            <section>
-                <div class="dark_div">
+                </section>
+            </section>            
+            <section id="skills">
+                <h3>Skills</h3>
+                <section>
                     <h4>Languages</h4>
-                </div>
-                <div class="light_div">
+                </section>
+                <section>
                     <p>Familiar with:</p>
                     <ul>
                       <li><p>Python</p></li>
@@ -115,20 +135,20 @@
                       <li><p>Java</p></li>
                       <li><p>SQL</p></li>
                     </ul>
-                </div>
-                <div class="dark_div">
+                </section>
+                <section>
                     <h4>Other Skills</h4>
-                </div>
-                <div class="light_div">
+                </section>
+                <section>
                     <ul>
                         <li><p>Proficient in Microsoft Office suite</p></li>
                         <li><p>Familiar with Adobe CS Applications: Photoshop & Illustrator</p></li>
                         <li><p>Familiar with 3ds Max computer modelling application</p></li>
                     </ul>
-                </div>
-            </section>
-            <h3>Contact</h3>
-            <section>
+                </section>
+            </section>            
+            <section id="contact">
+                <h3>Contact</h3>
                 <p>T: 415.279.0865</p>
                 <p>E: Jacob.h.froman@gmail.com</p>
             </section>

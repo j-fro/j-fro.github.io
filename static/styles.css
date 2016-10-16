@@ -1,59 +1,71 @@
 body {
-    background-color: #EEEEEE;
-    font-family: sans-serif;
-    width: 50%;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
-
-header {
-    padding: 15px;
-}
-
-header span {
-    height: 100px;
-    padding-left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 55px;
-}
-
 header img {
     border-radius: 50%;
+    width: 150px;
+}
+aside {
+    box-sizing: border-box;
     float: left;
-    height: 100px;
+    position: fixed;
+    width: 30%;
 }
-
-.ui-accordion .ui-accordion-header {
-	display: block;
-	cursor: pointer;
-	position: relative;
-	margin: 2px 0 0 0;
-	padding: .5em .5em .5em .7em;
-	font-size: 100%;
-    background-color: #91A8D0;
+aside header {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    line-height: 10px;
+    text-align: center;
 }
-.ui-accordion .ui-accordion-content {
-	padding: 1em 2.2em;
-	border-top: 0;
-	overflow: auto;
-    background-color: #b7c0d0;
+main {
+    width: 70%;
+    margin-left: 30%;
+    background: url(images/paper.jpg) top left repeat-y;
+    background-size: contain;
 }
-
-.light_div {
-    background-color: #b7c0d0;
-    margin: auto;
-    width: 90%;
+main section {
     padding: 10px;
-    padding-left: 20px;
 }
-
-.dark_div {
-    background-color: #91A8D0;
-    padding: 1px;
-    padding-left: 10px;
-    width: 100%;
+nav a {
+    text-decoration: none;
+    color: #111111;
+    display: block;
 }
-
+nav a:hover {
+    background-color: #d3b486;
+}
+nav a::visited {
+    color: #111111;
+}
+nav a p {
+    line-height: 50px;
+    padding-left: 15px;
+    margin: 0;
+}
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 24px;
+}
+h2 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+}
+h3 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+    padding-bottom: 15px;   
+    margin: 0;
+}
+h4 {
+    padding-left: 15px; 
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    margin: 0;
+}
 p {
+    font-family: Consolas, monaco, monospace;
     font-size: 16px;
+    padding-left: 15px;
+    margin: 0;
 }
