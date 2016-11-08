@@ -16,6 +16,7 @@ var getRandomInt = function(floor, ceiling) {
 var goalPicker = function(goals) {
     var index = getRandomInt(0, goals.length);
     var goal = goals[index];
+    return goal;
 };
 
 var goalSetter = function(goal) {
