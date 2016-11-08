@@ -8,8 +8,8 @@ var goalList = [
 ];
 
 var getRandomInt = function(floor, ceiling) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
+    var min = Math.ceil(min);
+    var max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
