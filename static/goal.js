@@ -7,9 +7,9 @@ var goalList = [
     "Send one email about an apartment"
 ];
 
-var getRandomInt = function(floor, ceiling) {
-    var min = Math.ceil(min);
-    var max = Math.floor(max);
+var getRandomInt = function(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
@@ -21,7 +21,8 @@ var goalPicker = function(goals) {
 
 var goalSetter = function(goal) {
     var element = document.getElementById("social-goal");
-    element.innerHTML = goal;
+    console.log(element);
+    element.innerHTML = "<h2>" + goal + "</h2>";
 };
 
 var goal = goalPicker(goalList);
