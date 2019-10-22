@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.top-cover-element {
+    background: url(../images/sanFrancisco_1024.jpg) fixed center no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 50%;
+    height: 50%;
+    width: 100%;
+}
+
+.center-cover-element {
+    background: url(../images/portrait.jpg) fixed center no-repeat;
+    background-size: contain;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.center-cover-element:hover {
+    cursor: pointer;
+}
+
+.bottom-cover-element {
+    background: url(../images/minneapolis_1024.jpg) fixed top left no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 50%;
+    top: 50%;
+    width: 100%;
+}
+
+.dummy-nav {
+    top: 0;
+    padding-top: 4%;
+    height: 10%;
+    width: 100%;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header,
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #a26161;
+    margin: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0%;
+}
+
+nav p,
+nav h3 {
+    display: inline-block;
+    text-align: center;
+    width: 19.6%;
+    margin: 0;
+    padding: 1% 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav p:hover {
+    cursor: pointer;
+    background-color: #7b0909;
+    color: white;
+}
+/* 
+.resume {
+    display: none;
+} */
+
+.resume-section {
+    margin: 0 20px 10% 20px;
+}
+
+p.selected,
+nav h3 {
+    background-color: #7b0909;
+    color: white;
+}
+
+nav a p.selected {
+    color: white;
+}
+
+#contact a,
+#contact a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #7b0909;
+}
+
+#contact p i {
+    width: 4%;
+}

@@ -1,16 +1,288 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="vendors/jquery.min.js" charset="utf-8"></script>
+        <script src="scripts/client.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/master.css" />
+        <title>Resume: Jacob Froman</title>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="static\styles.css">
-</head>
+    <body>
+        <!-- <section class="front-page">
+        <div class="top-cover-element"></div>
+        <img class="bottom-cover-element" source="../images/portrait.jpg"></img>
+        <div class="center-cover-element"></div>
+    </section> -->
+        <section class="resume">
+            <header>
+                <nav>
+                    <a href="#experience" class="section-link">
+                        <p class="selected">Experience</p>
+                    </a>
+                    <a href="#projects" class="section-link">
+                        <p>Projects</p>
+                    </a>
+                    <a href="#education" class="section-link">
+                        <p>Education</p>
+                    </a>
+                    <a href="#skills" class="section-link">
+                        <p>Skills</p>
+                    </a>
+                    <a href="#contact" class="section-link">
+                        <p>Contact</p>
+                    </a>
+                </nav>
+            </header>
+            <div class="dummy-nav"></div>
+            <main>
+                <section id="experience" class="resume-section current-section">
+                    <h3>Software Engineer</h3>
+                    <h4>Dispatch It, Minneapolis MN</h4>
+                    <p>August 2019 - Present</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Took ownership of developing and maintaining existing React Native
+                                mobile driver app
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Software Engineer</h3>
+                    <h4>New Lion Labs, Minneapolis MN</h4>
+                    <p>March 2017 - July 2019</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Responsible for full stack development of multiple green-field
+                                mobile and web applications to fulfill a variety of client-driven
+                                goals (such as social networking, calendar aggregation, and dating).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Touched on all elements of the stack and development process:
+                                creating architecture and data model designs, server and database
+                                development, front-end development on mobile and web platforms, and
+                                deployment to app stores and hosted platforms.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Influenced technology decisions in pursuit of ease and robustness of
+                                development, spearheading the adoption of React/React Native and
+                                Typescript.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Worked solo or in teams of 2-8 to build applications to meet
+                                clients’ varied needs.
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Merchant</h3>
+                    <h4>Lux for Life/Marco Bicego USA, San Francisco CA</h4>
+                    <p>March 2014 - November 2016</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Managed the company's largest single account through a period of
+                                strong sales growth
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Worked with buyers, store managers, and cross functionally with
+                                marketing and operations personnel to drive sales
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Managed product needs for all company events, over 200 events per
+                                year
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Overhauled EDI (data interchange) system to reduce costs and
+                                dramatically reduce daily time investment
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Merchandising Assistant</h3>
+                    <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
+                    <p>January 2012 - March 2014</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Responsible for day to day upkeep for national accounts: entering
+                                orders, processing EDI shipments and returns
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Customer service for national accounts, including making product
+                                available for requests to drive sales
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Analyze corporate sales data to help plan orders and product
+                                development
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Office Assistant</h3>
+                    <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
+                    <p>June 2011 - January 2012</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Oversaw incoming and outgoing inventory movement; invoice packages
+                                out, returning incoming merchandise to stock condition
+                            </p>
+                        </li>
+                        <li>
+                            <p>Oversaw repair process for customer owned repairs</p>
+                        </li>
+                        <li>
+                            <p>
+                                Contributed to sales presentations as well as presentations for
+                                corporate meetings
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Office Assistant (Part Time)</h3>
+                    <p>Lux for Life/Marco Bicego USA, San Francisco CA</p>
+                    <p>June 2008 - June 2011</p>
+                    <ul>
+                        <li>
+                            <p>
+                                Oversaw incoming and outgoing inventory movement; invoice packages
+                                out, returning incoming merchandise to stock condition
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Contributed to sales presentations as well as presentations for
+                                corporate meetings
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section id="projects" class="resume-section">
+                    <h3>Custom EDI Integrator</h3>
+                    <p>
+                        Client GUI application built with Python and PyQt. Queried company databases
+                        to aggregate invoice data to be transmitted to corporate partners for
+                        outgoing shipments.
+                    </p>
+                    <p>
+                        Provided runtime checks of invoice data against client orders to avoid
+                        costly data mistakes
+                    </p>
+                    <h3>Rowing Club Scheduler</h3>
+                    <p>
+                        A web app built with Python and Django to allow a rowing club to manage
+                        members schedules and assign members to boats based on their positions and
+                        availability
+                    </p>
+                </section>
+                <section id="education" class="resume-section">
+                    <h3>Prime Digital Academy</h3>
+                    <h4>Full Stack Web Development</h4>
+                    <p>Minneapolis, MN, February 2017</p>
 
-<body>
-    <h3>Hey there! Your social goal for the day is:</h3>
-    <h3 id="social-goal"></h3>
-</body>
-<script src="static\goal.js"></script>
-
+                    <h3>University of Redlands</h3>
+                    <h4>Bachelor of Arts: History</h4>
+                    <p>Redlands, CA, December 2011</p>
+                    <p>Member of Phi Beta Kappa</p>
+                </section>
+                <section id="skills" class="resume-section">
+                    <h3>Technical Proficiencies</h3>
+                    <ul>
+                        <li><em>Languages: </em>Javascript, Python, C#, Rust, SQL, CSS3, HTML5</li>
+                        <li><em>Frameworks: </em>Angular 1.x, Express.js, Django, Flask, Rocket</li>
+                        <li><em>Technologies: </em>git, Github, jQuery, Responsive Design</li>
+                    </ul>
+                    <!-- <h3>Languages</h3>
+                <p>Familiar with:</p>
+                <ul>
+                    <li>
+                        <p>Python</p>
+                    </li>
+                    <li>
+                        <p>C#</p>
+                    </li>
+                    <li>
+                        <p>C</p>
+                    </li>
+                    <li>
+                        <p>Java</p>
+                    </li>
+                    <li>
+                        <p>SQL</p>
+                    </li>
+                </ul>
+                <h3>Other Skills</h3>
+                <ul>
+                    <li>
+                        <p>Proficient in Microsoft Office suite</p>
+                    </li>
+                    <li>
+                        <p>Familiar with Adobe CS Applications: Photoshop & Illustrator</p>
+                    </li>
+                    <li>
+                        <p>Familiar with 3ds Max computer modelling application</p>
+                    </li>
+                </ul> -->
+                </section>
+                <section id="contact" class="resume-section">
+                    <p>
+                        <a><i class="fa fa-lg fa-phone"></i> 415.279.0865</a>
+                    </p>
+                    <p>
+                        <a href="mailto:jacob.h.froman@gmail.com"
+                            ><i class="fa fa-lg fa-envelope"></i> jacob.h.froman@gmail.com</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://github.com/j-fro" target="_blank"
+                            ><i class="fa fa-lg fa-github"></i> https://github.com/j-fro</a
+                        >
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/jacob-froman" target="_blank"
+                            ><i class="fa fa-lg fa-linkedin-square"></i>
+                            https://www.linkedin.com/in/jacob-froman</a
+                        >
+                    </p>
+                </section>
+            </main>
+            <footer>
+                <nav>
+                    <a>
+                        <h3>Jacob Froman</h3>
+                    </a>
+                    <a>
+                        <p><i class="fa fa-lg fa-phone"></i> 415.279.0865</p>
+                    </a>
+                    <!-- <p><a href="mailto:jacob.h.froman@gmail.com"><i class="fa fa-lg fa-envelope"></i>jacob.h.froman@gmail.com</a></p> -->
+                    <a href="mailto:jacob.h.froman@gmail.com">
+                        <p><i class="fa fa-lg fa-envelope"></i></p>
+                    </a>
+                    <a href="https://github.com/j-fro" target="_blank">
+                        <p><i class="fa fa-lg fa-github"></i></p>
+                    </a>
+                    <!-- <p><a href="https://github.com/j-fro" target="_blank"><i class="fa fa-lg fa-github"></i>https://github.com/j-fro</a></p> -->
+                    <a href="https://www.linkedin.com/in/jacob-froman" target="_blank">
+                        <p><i class="fa fa-lg fa-linkedin-square"></i></p>
+                    </a>
+                    <!-- <p><a href="https://www.linkedin.com/in/jacob-froman" target="_blank"><i class="fa fa-lg fa-linkedin-square"></i> https://www.linkedin.com/in/jacob-froman</a></p> -->
+                </nav>
+            </footer>
+        </section>
+    </body>
 </html>
