@@ -1,7 +1,7 @@
 $(document).ready(function() {
     console.log('jq');
     // $('.resume').hide();
-    // $('.resume-section').hide();
+    $('.resume-section').hide();
 
     // $('.center-cover-element').hover(function() {
     //     console.log('hovering');
@@ -20,7 +20,7 @@ $(document).ready(function() {
     //     );
     //     $('.center-cover-element').fadeOut('slow');
     //     $('.resume').fadeIn('slow');
-    //     $('.current-section').fadeIn('slow');
+    $('.current-section').show();
     // });
 
     $('.section-link').on('click', function() {
